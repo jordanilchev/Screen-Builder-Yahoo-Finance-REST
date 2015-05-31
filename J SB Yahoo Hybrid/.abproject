@@ -1,0 +1,48 @@
+{
+  "ProjectName": "J SB Yahoo Hybrid",
+  "ProjectGuid": "1697e94e-1730-4485-82d0-54b2f1266aeb",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.JSBYahooHybrid",
+  "DisplayName": "J SB Yahoo Hybrid",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{35e6d5c6-3b55-4082-8c3c-83a6fc7790c7}",
+  "WP8ProductID": "{e74c6587-469d-4a04-887d-ef001cbf8732}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.JSBYahooHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
