@@ -16,8 +16,9 @@
           "masterDetails": false,
           "pullToRefresh": true,
           "endlessScroll": false,
+          "subHeaderField": "query.results.quote.FiftydayMovingAverage",
           "collection": "json",
-          "headerField": "query"
+          "headerField": "query.results.quote.symbol"
         }
       ],
       "icon": "home"
