@@ -1,0 +1,11 @@
+<div data-role="view" data-title="Home" data-layout="main" data-model="app.home" data-show="app.home.onShow">
+
+    <ul data-role="listview" data-style="inset" data-template="homeModelTemplate" data-bind="{ source: homeModel.dataSource}" data-pull-to-refresh="true" data-endless-scroll="false">
+    </ul>
+    <script type="text/x-kendo-template" id="homeModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data.query #</h3>
+
+        </div>
+    </script>
+</div>

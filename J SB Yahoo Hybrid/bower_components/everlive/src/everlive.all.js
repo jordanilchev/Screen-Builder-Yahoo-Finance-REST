@@ -2945,17 +2945,17 @@ function hasOwnProperty(obj, prop) {
       var date = computeValue(obj, expr['date']);
       // TODO: use python-style date formatting
       /*
-       %Y    Year (4 digits, zero padded)    0000-9999
-       %m    Month (2 digits, zero padded)    01-12
-       %d    Day of Month (2 digits, zero padded)    01-31
-       %H    Hour (2 digits, zero padded, 24-hour clock)    00-23
-       %M    Minute (2 digits, zero padded)    00-59
-       %S    Second (2 digits, zero padded)    00-60
-       %L    Millisecond (3 digits, zero padded)    000-999
-       %j    Day of year (3 digits, zero padded)    001-366
-       %w    Day of week (1-Sunday, 7-Saturday)    1-7
-       %U    Week of year (2 digits, zero padded)    00-53
-       %%    Percent Character as a Literal    %
+       %Y	Year (4 digits, zero padded)	0000-9999
+       %m	Month (2 digits, zero padded)	01-12
+       %d	Day of Month (2 digits, zero padded)	01-31
+       %H	Hour (2 digits, zero padded, 24-hour clock)	00-23
+       %M	Minute (2 digits, zero padded)	00-59
+       %S	Second (2 digits, zero padded)	00-60
+       %L	Millisecond (3 digits, zero padded)	000-999
+       %j	Day of year (3 digits, zero padded)	001-366
+       %w	Day of week (1-Sunday, 7-Saturday)	1-7
+       %U	Week of year (2 digits, zero padded)	00-53
+       %%	Percent Character as a Literal	%
        */
       throw new Error("Not Implemented");
     }
@@ -7069,45 +7069,45 @@ var CryptoJS = require('./core').CryptoJS;
 
 // create custom json serialization format
 var JsonFormatter = {
-    stringify: function (cipherParams) {
-        // create json object with ciphertext
-        var jsonObj = {
-            ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)
-        };
-        
-        // optionally add iv and salt
-        if (cipherParams.iv) {
-            jsonObj.iv = cipherParams.iv.toString();
-        }
-        
-        if (cipherParams.salt) {
-            jsonObj.s = cipherParams.salt.toString();
-        }
+	stringify: function (cipherParams) {
+		// create json object with ciphertext
+		var jsonObj = {
+			ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)
+		};
+		
+		// optionally add iv and salt
+		if (cipherParams.iv) {
+			jsonObj.iv = cipherParams.iv.toString();
+		}
+		
+		if (cipherParams.salt) {
+			jsonObj.s = cipherParams.salt.toString();
+		}
 
-        // stringify json object
-        return JSON.stringify(jsonObj)
-    },
+		// stringify json object
+		return JSON.stringify(jsonObj)
+	},
 
-    parse: function (jsonStr) {
-        // parse json string
-        var jsonObj = JSON.parse(jsonStr);
-        
-        // extract ciphertext from json object, and create cipher params object
-        var cipherParams = CryptoJS.lib.CipherParams.create({
-            ciphertext: CryptoJS.enc.Base64.parse(jsonObj.ct)
-        });
-        
-        // optionally extract iv and salt
-        if (jsonObj.iv) {
-            cipherParams.iv = CryptoJS.enc.Hex.parse(jsonObj.iv);
-        }
+	parse: function (jsonStr) {
+		// parse json string
+		var jsonObj = JSON.parse(jsonStr);
+		
+		// extract ciphertext from json object, and create cipher params object
+		var cipherParams = CryptoJS.lib.CipherParams.create({
+			ciphertext: CryptoJS.enc.Base64.parse(jsonObj.ct)
+		});
+		
+		// optionally extract iv and salt
+		if (jsonObj.iv) {
+			cipherParams.iv = CryptoJS.enc.Hex.parse(jsonObj.iv);
+		}
             
-        if (jsonObj.s) {
-            cipherParams.salt = CryptoJS.enc.Hex.parse(jsonObj.s);
-        }
-        
-        return cipherParams;
-    }
+		if (jsonObj.s) {
+			cipherParams.salt = CryptoJS.enc.Hex.parse(jsonObj.s);
+		}
+		
+		return cipherParams;
+	}
 };
 
 exports.JsonFormatter = JsonFormatter;
@@ -20219,7 +20219,7 @@ var LocalStoragePersister = (function () {
         this._ensureLocalStore();
         var encryptionProvider = this._getEncryptionProvider();
         value = encryptionProvider.encrypt(value);
-        return this._localStore.setItem(key, value);
+		return this._localStore.setItem(key, value);
 
     };
 

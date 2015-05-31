@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href="bower_components/kendo-ui-appbuilder-core/styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- cordova script (this will be a 404 during development if served with `grunt serve`) -->
+    <script src="cordova.js"></script>
+
+    <script src="bower_components/kendo-ui-appbuilder-core/js/jquery.min.js"></script>
+    <script src="bower_components/kendo-ui-appbuilder-core/js/kendo.mobile.min.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script src="app.js"></script>
+    <script src="data/yahooFinance.js"></script>
+</head>
+
+<body id="kendoUiMobileApp">
+    <div data-role="layout" data-id="main">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+
+        <!-- application views will be rendered here -->
+
+        <footer data-role="footer">
+            <div data-role="tabstrip" id="navigation-container">
+                <a href="home/view.html" data-icon="home">Home</a>
+            </div>
+        </footer>
+    </div>
+
+    <div data-role="layout" data-id="main-nonav">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+
+        <!-- application views will be rendered here -->
+
+        <footer data-role="footer">
+        </footer>
+    </div>
+    <script src="home/index.js"></script>
+</body>
+
+</html>

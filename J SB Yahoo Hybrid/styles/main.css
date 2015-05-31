@@ -1,0 +1,91 @@
+#kendoUiMobileApp .image-with-text img {
+    float: left;
+    margin-right: 15px;
+}
+
+#kendoUiMobileApp .block {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+#kendoUiMobileApp .button-group,
+#kendoUiMobileApp .icon-group {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+#kendoUiMobileApp .button-group {
+    table-layout: fixed;
+}
+
+#kendoUiMobileApp .button-group .km-button {
+    display: table-cell;
+    padding: .6em .8em;
+    margin: 1em 0;
+}
+
+#kendoUiMobileApp .button-group.button-group-vertical .km-button {
+    display: block;
+}
+
+#kendoUiMobileApp .group-separator {
+    border: none;
+    background: transparent;
+}
+
+#kendoUiMobileApp .group-separator-header {
+    margin: 1em 0;
+}
+
+#kendoUiMobileApp .app-icon {
+    text-align: center;
+    margin: 3em 0;
+}
+
+#kendoUiMobileApp .view-title {
+    text-align: center;
+    font-weight: normal;
+}
+
+#kendoUiMobileApp .km-drawer-button:after,
+#kendoUiMobileApp .km-drawer-button:before {
+    content: '\e077';
+}
+
+#kendoUiMobileApp .km-drawer .km-content {
+    background-color: #fcfcfc;
+}
+
+#kendoUiMobileApp .icon-group .app-icon,
+#kendoUiMobileApp .icon-group .app-details {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#kendoUiMobileApp .icon-group .app-icon {
+    margin: 0;
+    width: 5em;
+    overflow: hidden;
+    text-align: left;
+}
+
+#kendoUiMobileApp .icon-group .app-icon img {
+    display: block;
+    max-width: 5em;
+    height: auto;
+}
+
+#kendoUiMobileApp .icon-group .app-details h2,
+#kendoUiMobileApp .icon-group .app-details h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+#kendoUiMobileApp .icon-group .app-details h4 {
+    color: #828282;
+    margin-top: 0.5em;
+}
