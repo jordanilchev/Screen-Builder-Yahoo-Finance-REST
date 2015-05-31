@@ -15,11 +15,11 @@ app.home = kendo.observable({
         schema: {
             model: {
                 fields: {
-                    query.results.quote.symbol: {
+                    symbol: {
                             field: 'query.results.quote.symbol',
                             defaultValue: ''
                         },
-                        query.results.quote.FiftydayMovingAverage: {
+                        FiftydayMovingAverage: {
                             field: 'query.results.quote.FiftydayMovingAverage',
                             defaultValue: ''
                         },
